@@ -10,8 +10,10 @@ html {
 
 body {
   background: #F1F1F1;
-  min-height: 100%
-  width: auto;
+  min-height: 100% width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 h1, a, input {
@@ -73,21 +75,46 @@ input, input::-webkit-input-placeholder {
   font-size: 100px;
 }
 
-input:hover {
+input:focus {
   color: #ec5a62;
 }
 
-.container {
-  display: inline-block;
+input::placeholder {
+  color: #c2c2c2;
+}
+
+* {
   box-sizing: border-box;
+}
+.conteiner {
   width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+  margin: 0 auto;
+  font-size: 0;
   /*width: 100%;*/
   /*vertical-align: top;*/
 }
+.title {
+  display: inline-block;
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 0;
+}
 
+.colums {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 33.3333333%;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.pictures {
+  display: inline-block;
+  text-align: right;
+  margin-left: 0;
+}
 
 .people, .popular, .recent {
   display: inline-block;
