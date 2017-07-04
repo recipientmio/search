@@ -102,7 +102,7 @@ input:hover {
   background-color: rgba(118, 117, 128, 0.05);
 }
 
-img {
+.round-img {
   border-radius: 30px;
   /*padding-right: 90%;*/
 }
